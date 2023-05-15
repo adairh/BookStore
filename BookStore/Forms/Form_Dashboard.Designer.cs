@@ -64,7 +64,7 @@
             // 
             // panelLeft
             // 
-            this.panelLeft.BackColor = System.Drawing.Color.Navy;
+            this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.panelLeft.Controls.Add(this.panelSide);
             this.panelLeft.Controls.Add(this.btnSettings);
             this.panelLeft.Controls.Add(this.btnViewSales);
@@ -217,11 +217,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(60, 99);
+            this.label3.Location = new System.Drawing.Point(45, 99);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 23);
+            this.label3.Size = new System.Drawing.Size(138, 23);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Group Vjppro";
+            this.label3.Text = "Group Vjp Pro";
             // 
             // button8
             // 
@@ -244,11 +244,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(34, 76);
+            this.label2.Location = new System.Drawing.Point(53, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(169, 23);
+            this.label2.Size = new System.Drawing.Size(130, 23);
             this.label2.TabIndex = 0;
-            this.label2.Text = "HUHUHU Shop";
+            this.label2.Text = "HEHEHE Shop";
             // 
             // pictureBox1
             // 
@@ -273,12 +273,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Navy;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.label4.Location = new System.Drawing.Point(18, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(354, 23);
+            this.label4.Size = new System.Drawing.Size(145, 23);
             this.label4.TabIndex = 0;
-            this.label4.Text = "HUHUHU Shop";
+            this.label4.Text = "Group Vjp Pro";
             // 
             // button9
             // 
@@ -299,7 +299,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Navy;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.labelTime);
@@ -354,7 +354,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(149, 23);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Hehehe";
+            this.label5.Text = "SaLaaR HuSyN";
             // 
             // label1
             // 
