@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -33,48 +33,73 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
-        <Reference Include="System"/>
-        <Reference Include="System.Core"/>
-        <Reference Include="System.Xml.Linq"/>
-        <Reference Include="System.Data.DataSetExtensions"/>
-        <Reference Include="Microsoft.CSharp"/>
-        <Reference Include="System.Data"/>
-        <Reference Include="System.Deployment"/>
-        <Reference Include="System.Drawing"/>
-        <Reference Include="System.Net.Http"/>
-        <Reference Include="System.Windows.Forms"/>
-        <Reference Include="System.Xml"/>
+        <Reference Include="Bunifu_UI_v1.52">
+          <HintPath>..\..\..\Bunifu_UI_v1.52.dll</HintPath>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Xml.Linq" />
+        <Reference Include="System.Data.DataSetExtensions" />
+        <Reference Include="Microsoft.CSharp" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Deployment" />
+        <Reference Include="System.Drawing" />
+        <Reference Include="System.Net.Http" />
+        <Reference Include="System.Windows.Forms" />
+        <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Form1.cs">
-            <SubType>Form</SubType>
-        </Compile>
-        <Compile Include="Form1.Designer.cs">
-            <DependentUpon>Form1.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Program.cs"/>
-        <Compile Include="Properties\AssemblyInfo.cs"/>
-        <EmbeddedResource Include="Properties\Resources.resx">
-            <Generator>ResXFileCodeGenerator</Generator>
-            <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-            <SubType>Designer</SubType>
-        </EmbeddedResource>
-        <Compile Include="Properties\Resources.Designer.cs">
-            <AutoGen>True</AutoGen>
-            <DependentUpon>Resources.resx</DependentUpon>
-        </Compile>
-        <None Include="Properties\Settings.settings">
-            <Generator>SettingsSingleFileGenerator</Generator>
-            <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-        </None>
-        <Compile Include="Properties\Settings.Designer.cs">
-            <AutoGen>True</AutoGen>
-            <DependentUpon>Settings.settings</DependentUpon>
-            <DesignTimeSharedInput>True</DesignTimeSharedInput>
-        </Compile>
+        <Compile Include="CustomControls\DragControl.cs" />
+        <Compile Include="Forms\Form1.cs" />
+        <Compile Include="Forms\Form1.Designer.cs" />
+        <Compile Include="Forms\Form_AddCategory.cs" />
+        <Compile Include="Forms\Form_AddCategory.Designer.cs" />
+        <Compile Include="Forms\Form_AddExpense.cs" />
+        <Compile Include="Forms\Form_AddExpense.Designer.cs" />
+        <Compile Include="Forms\Form_AddNewBook.cs" />
+        <Compile Include="Forms\Form_AddNewBook.Designer.cs" />
+        <Compile Include="Forms\Form_AddStock.cs" />
+        <Compile Include="Forms\Form_AddStock.Designer.cs" />
+        <Compile Include="Forms\Form_Dashboard.cs" />
+        <Compile Include="Forms\Form_Dashboard.Designer.cs" />
+        <Compile Include="Forms\Form_FinishOrder.cs" />
+        <Compile Include="Forms\Form_FinishOrder.Designer.cs" />
+        <Compile Include="Program.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Properties\Resources.Designer.cs" />
+        <Compile Include="Properties\Settings.Designer.cs" />
+        <Compile Include="UserControls\UC_Home.cs" />
+        <Compile Include="UserControls\UC_Home.Designer.cs" />
+        <Compile Include="UserControls\UC_ManageExpense.cs" />
+        <Compile Include="UserControls\UC_ManageExpense.Designer.cs" />
+        <Compile Include="UserControls\UC_ManageUser.cs" />
+        <Compile Include="UserControls\UC_ManageUser.Designer.cs" />
+        <Compile Include="UserControls\UC_PurchaseDetails.cs" />
+        <Compile Include="UserControls\UC_PurchaseDetails.Designer.cs" />
+        <Compile Include="UserControls\UC_Sales.cs" />
+        <Compile Include="UserControls\UC_Sales.Designer.cs" />
+        <Compile Include="UserControls\UC_ViewSales.cs" />
+        <Compile Include="UserControls\UC_ViewSales.Designer.cs" />
+        <EmbeddedResource Include="Forms\Form1.resx" />
+        <EmbeddedResource Include="Forms\Form_AddCategory.resx" />
+        <EmbeddedResource Include="Forms\Form_AddExpense.resx" />
+        <EmbeddedResource Include="Forms\Form_AddNewBook.resx" />
+        <EmbeddedResource Include="Forms\Form_AddStock.resx" />
+        <EmbeddedResource Include="Forms\Form_Dashboard.resx" />
+        <EmbeddedResource Include="Forms\Form_FinishOrder.resx" />
+        <EmbeddedResource Include="Properties\Resources.resx" />
+        <EmbeddedResource Include="UserControls\UC_Home.resx" />
+        <EmbeddedResource Include="UserControls\UC_ManageExpense.resx" />
+        <EmbeddedResource Include="UserControls\UC_ManageUser.resx" />
+        <EmbeddedResource Include="UserControls\UC_PurchaseDetails.resx" />
+        <EmbeddedResource Include="UserControls\UC_Sales.resx" />
+        <EmbeddedResource Include="UserControls\UC_ViewSales.resx" />
     </ItemGroup>
     <ItemGroup>
-        <None Include="App.config"/>
+        <None Include="App.config" />
     </ItemGroup>
-    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <ItemGroup>
+      <Content Include="Properties\Settings.settings" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
