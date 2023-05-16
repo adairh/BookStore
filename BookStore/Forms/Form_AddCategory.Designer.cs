@@ -1,4 +1,4 @@
-﻿namespace BookShopManagement.Forms
+﻿namespace BookStore.Forms
 {
     partial class Form_AddCategory
     {

@@ -1,4 +1,4 @@
-﻿using BookShopManagement.Forms;
+﻿using BookStore.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BookShopManagement
+namespace BookStore
 {
     public partial class Form1 : Form
     {

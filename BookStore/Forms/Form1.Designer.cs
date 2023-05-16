@@ -1,4 +1,4 @@
-﻿namespace BookShopManagement
+﻿namespace BookStore
 {
     partial class Form1
     {
